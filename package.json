@@ -5,13 +5,17 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "Dalzon Charles-Hébert",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
