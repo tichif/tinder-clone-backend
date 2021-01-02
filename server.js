@@ -1,5 +1,6 @@
 import express from 'express';
 import dotEnv from 'dotenv';
+import Cors from 'cors';
 
 dotEnv.config();
 
@@ -9,6 +10,9 @@ import cardsRoute from './routes/cards.js';
 const app = express();
 
 connectDB();
+
+app.use(express.json());
+app.use(Cors());
 
 app.use('/api/cards', cardsRoute);
 
